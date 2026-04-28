@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for All Pages */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Button Styles */
+button, .btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active, .btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Styles */
+a {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2575fc;
+}
+
+/* Dashboard and Admin Specific Styles */
+.dashboard, .admin {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.dashboard h1, .admin h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard p, .admin p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* History Page Styles */
+.history {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.history h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.history th, .history td {
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.history th {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1, h2 {
+        font-size: 1.75rem;
+    }
+
+    .dashboard, .admin, .history {
+        padding: 1rem;
+    }
+}
